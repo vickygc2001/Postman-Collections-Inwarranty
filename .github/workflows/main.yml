@@ -5,9 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule: 
-    - cron: 30 07 * * *   # 7:30 AM UTC time
-    - cron: 00 16 * * *   #runs at 4 PM UTC time every day
-    - cron: 00 12 * * 1-4   #runs at 12 PM UTC time Mon- Fri
+    - cron: 30 07 * * 1   # 7:30 AM UTC time
+#    - cron: 00 16 * * *   #runs at 4 PM UTC time every day
+#    - cron: 00 12 * * 1-4   #runs at 12 PM UTC time Mon- Fri
 
 jobs:
   run-postman-tests:
